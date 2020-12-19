@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact CodecZ</title>
+    <link rel="icon" href="/pics/icon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        *{
+            font-family: 'Baloo Tammudu 2', cursive;
+        }
+        .navbar{
+        position: sticky;
+        top: 0px;
+        background-color: #ff1d58;
+        background-color: #101820FF;
+        display: flow-root;
+        z-index: 999;
+        border-bottom: black 1px solid;
+    }
+    .navbar ul{
+        display: flex;
+        margin: 0px;
+        padding: 0px 4px;
+        flex-wrap: wrap;
+        align-items: center;
+        /* width: 80%; */
+    }
+    .navbar ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        /* height: 100%;
+        width: 100%; */
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 16px 16px;
+        font-size: 20px;
+        transition-duration: 0.3s;
+        line-height: 1.5;
+        /* display: flex;
+        align-items: center; */
+        /* justify-content: center; */
+    }
+    .navbar ul li a:hover{
+        font-size: 24px;
+        background-color: white;   
+        color: black;
+    }
+    #contact{
+        display: flex;
+        /* align-items: center; */
+    }
+    #user{
+        display: flex;
+        /* align-items: center; */
+        text-decoration: none;
+        color: white;
+        background-color: #ff1d58;
+        background-color: #101820FF;
+        padding:16px 16px;
+        font-size: 20px;
+        border: none;
+        transition-duration: 0.3s;
+        outline: none;
+        /* float: right; */
+    }
+    #user:hover{
+        /* display: flex;
+        align-items: center; */
+        font-size: 24px;
+        background-color: white;
+        outline: none;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+        line-height: normal;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 105px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .dropdown-content a{
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .left{
+        display: block;
+        float: left;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 105px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .dropdown-content a{
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+    }
+    .dropdown-content a:hover{ background-color: #ddd;}
+    .right:hover .dropdown-content{display: block;}
+    .right:hover #user{background-color: white; font-size: 24px;color: #101820FF;}
+        .right{
+        display: inline-block;
+        float: right;
+        line-height: 1.5;
+        padding: 4px;
+    }
+        #minimized{
+        background-color: #101820FF;
+        border: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        display: none;
+    }
+    .minimized-content{
+        display: none;
+    }
+    
+        @media screen and (max-width: 562px) {
+       #contact{display: none;}
+       #About{display: none;}
+       #minimized{
+           display: inline-block;
+           outline: none;
+           text-align: center;
+        }
+       #minimized:hover{
+        /* display: flex;
+        align-items: center; */
+        font-size: 24px;
+        background-color: white;
+        outline: none;
+        }
+       .minimized-content{
+        /* display: none; */
+        position: absolute;
+        background-color: black;
+        color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+       }
+       .minimized-content a{
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+       }
+       .dropdown-content a:hover{ background-color: #ddd;}
+       .minimized-area:hover .minimized-content{display: block;}
+       .minimized-area:hover #minimized{background-color: white;color: black; font-size: 20px;}
+       
+       .minimized-area{
+        display: inline-block;
+        float: right;
+    }
+    .navbar ul li a:hover{
+        font-size: 20px;
+        background-color: white;   
+    }
+    .right:hover #user{background-color: white; font-size: 20px;}
+    .right-content{
+        display: flex;
+        min-width: 300px;
+        flex-wrap: wrap;
+        padding:0px;
+    }
+    .box{
+        max-width: none;
+    }
+   }
+   
+    </style>
+</head>
+<body>
+    <nav class="navbar">   
+        <div class="left">    
+        <ul>
+        <!-- <div class="left"> -->
+            <li><a href="" ><span class="w3-xlarge"><i class="fa fa-home"></i></span> Home</a></li>
+            <li><a href="/contactus.html" id="contact"><span class="material-icons">mail_outline</span>&nbsp;Contact Us</a> </li>
+            <li><a href="" id="About">About Us</a> </li>
+            <div class="minimized-area">
+            <button id="minimized"><span class="material-icons">toc</span></button>
+            <div class="minimized-content">
+                <a href="" id="minimized-contact"><!--<span class="material-icons">mail_outline</span>&nbsp;-->Contact Us</a> </li>
+                <a href="" id="minimized-About">About Us</a>
+            </div>
+        </div>
+        <!-- </div>
+        <div class="right"> -->
+        </ul>
+        </div>
+        <div class="right">
+            <button href="" id="user"><span class="material-icons">person</span>Guest</button>
+            <div class="dropdown-content">
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </div> 
+    </nav>
+</body>
+</html>
